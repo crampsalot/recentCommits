@@ -15,6 +15,7 @@
 		4A0FC7E725DE3D8F008D746B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A0FC7E525DE3D8F008D746B /* LaunchScreen.storyboard */; };
 		4A0FC7F225DE3D8F008D746B /* recentCommitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0FC7F125DE3D8F008D746B /* recentCommitsTests.swift */; };
 		4A0FC7FD25DE3D8F008D746B /* recentCommitsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0FC7FC25DE3D8F008D746B /* recentCommitsUITests.swift */; };
+		4A19756025DE44E3006F0007 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A19755F25DE44E3006F0007 /* sample.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		4A0FC7F825DE3D8F008D746B /* recentCommitsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = recentCommitsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0FC7FC25DE3D8F008D746B /* recentCommitsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recentCommitsUITests.swift; sourceTree = "<group>"; };
 		4A0FC7FE25DE3D8F008D746B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A19755F25DE44E3006F0007 /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		4A0FC7D925DE3D8B008D746B /* recentCommits */ = {
 			isa = PBXGroup;
 			children = (
+				4A19755E25DE448C006F0007 /* json */,
 				4A0FC7DA25DE3D8B008D746B /* AppDelegate.swift */,
 				4A0FC7DC25DE3D8B008D746B /* SceneDelegate.swift */,
 				4A0FC7DE25DE3D8B008D746B /* ViewController.swift */,
@@ -126,6 +129,14 @@
 				4A0FC7FE25DE3D8F008D746B /* Info.plist */,
 			);
 			path = recentCommitsUITests;
+			sourceTree = "<group>";
+		};
+		4A19755E25DE448C006F0007 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				4A19755F25DE44E3006F0007 /* sample.json */,
+			);
+			path = json;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A0FC7E725DE3D8F008D746B /* LaunchScreen.storyboard in Resources */,
+				4A19756025DE44E3006F0007 /* sample.json in Resources */,
 				4A0FC7E425DE3D8F008D746B /* Assets.xcassets in Resources */,
 				4A0FC7E225DE3D8B008D746B /* Main.storyboard in Resources */,
 			);
