@@ -11,3 +11,6 @@ In advance of that, we would like you to do the following:
 As you create this app, please make frequent commits of your work in progress because we want to be able to follow the
 process you went through in creating the app. We would like you to provide the link to your public GitHub repo.
 Please include any unit tests you performed on this app.
+
+API used:
+ https://api.github.com/repos/{owner}/{repo}/commits
