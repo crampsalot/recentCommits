@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4A0FC7DB25DE3D8B008D746B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0FC7DA25DE3D8B008D746B /* AppDelegate.swift */; };
 		4A0FC7DD25DE3D8B008D746B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0FC7DC25DE3D8B008D746B /* SceneDelegate.swift */; };
-		4A0FC7DF25DE3D8B008D746B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0FC7DE25DE3D8B008D746B /* ViewController.swift */; };
 		4A0FC7E225DE3D8B008D746B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A0FC7E025DE3D8B008D746B /* Main.storyboard */; };
 		4A0FC7E425DE3D8F008D746B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A0FC7E325DE3D8F008D746B /* Assets.xcassets */; };
 		4A0FC7E725DE3D8F008D746B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A0FC7E525DE3D8F008D746B /* LaunchScreen.storyboard */; };
@@ -17,6 +16,8 @@
 		4A0FC7FD25DE3D8F008D746B /* recentCommitsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0FC7FC25DE3D8F008D746B /* recentCommitsUITests.swift */; };
 		4A19756025DE44E3006F0007 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A19755F25DE44E3006F0007 /* sample.json */; };
 		4A19756B25DE5162006F0007 /* GitHubAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A19756A25DE5162006F0007 /* GitHubAPIService.swift */; };
+		4A19757425E0C14B006F0007 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4A19757325E0C14A006F0007 /* README.md */; };
+		4A19757A25E0C2BF006F0007 /* RecentCommitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A19757925E0C2BF006F0007 /* RecentCommitsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,6 @@
 		4A0FC7D725DE3D8B008D746B /* recentCommits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recentCommits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0FC7DA25DE3D8B008D746B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A0FC7DC25DE3D8B008D746B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4A0FC7DE25DE3D8B008D746B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4A0FC7E125DE3D8B008D746B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A0FC7E325DE3D8F008D746B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A0FC7E625DE3D8F008D746B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +53,8 @@
 		4A0FC7FE25DE3D8F008D746B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A19755F25DE44E3006F0007 /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = SOURCE_ROOT; };
 		4A19756A25DE5162006F0007 /* GitHubAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GitHubAPIService.swift; path = api/GitHubAPIService.swift; sourceTree = "<group>"; };
+		4A19757325E0C14A006F0007 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4A19757925E0C2BF006F0007 /* RecentCommitsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCommitsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		4A0FC7CE25DE3D8A008D746B = {
 			isa = PBXGroup;
 			children = (
+				4A19757325E0C14A006F0007 /* README.md */,
 				4A0FC7D925DE3D8B008D746B /* recentCommits */,
 				4A0FC7F025DE3D8F008D746B /* recentCommitsTests */,
 				4A0FC7FB25DE3D8F008D746B /* recentCommitsUITests */,
@@ -103,10 +106,10 @@
 		4A0FC7D925DE3D8B008D746B /* recentCommits */ = {
 			isa = PBXGroup;
 			children = (
+				4A19757825E0C28B006F0007 /* ViewControllers */,
 				4A19755E25DE448C006F0007 /* json */,
 				4A0FC7DA25DE3D8B008D746B /* AppDelegate.swift */,
 				4A0FC7DC25DE3D8B008D746B /* SceneDelegate.swift */,
-				4A0FC7DE25DE3D8B008D746B /* ViewController.swift */,
 				4A0FC7E025DE3D8B008D746B /* Main.storyboard */,
 				4A0FC7E325DE3D8F008D746B /* Assets.xcassets */,
 				4A0FC7E525DE3D8F008D746B /* LaunchScreen.storyboard */,
@@ -140,6 +143,14 @@
 				4A19755F25DE44E3006F0007 /* sample.json */,
 			);
 			path = json;
+			sourceTree = "<group>";
+		};
+		4A19757825E0C28B006F0007 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A19757925E0C2BF006F0007 /* RecentCommitsTableViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +258,7 @@
 			files = (
 				4A0FC7E725DE3D8F008D746B /* LaunchScreen.storyboard in Resources */,
 				4A19756025DE44E3006F0007 /* sample.json in Resources */,
+				4A19757425E0C14B006F0007 /* README.md in Resources */,
 				4A0FC7E425DE3D8F008D746B /* Assets.xcassets in Resources */,
 				4A0FC7E225DE3D8B008D746B /* Main.storyboard in Resources */,
 			);
@@ -273,7 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A0FC7DF25DE3D8B008D746B /* ViewController.swift in Sources */,
+				4A19757A25E0C2BF006F0007 /* RecentCommitsTableViewController.swift in Sources */,
 				4A0FC7DB25DE3D8B008D746B /* AppDelegate.swift in Sources */,
 				4A0FC7DD25DE3D8B008D746B /* SceneDelegate.swift in Sources */,
 				4A19756B25DE5162006F0007 /* GitHubAPIService.swift in Sources */,
