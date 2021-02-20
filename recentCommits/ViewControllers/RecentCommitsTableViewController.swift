@@ -23,7 +23,7 @@ class RecentCommitsTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
 
 //        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
-
+        self.title = "Recent Commits"
         fetchCommits()
     }
 
