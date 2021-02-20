@@ -27,12 +27,12 @@ struct Commit: Decodable {
 }
 
 struct CommitDetails: Decodable {
-    let author: Author?
+    let author: Author
     let message: String?
 }
 
 struct Author: Decodable {
-    let name: String?
+    let name: String
 }
 
 enum GitHubAPIErrors: Error {

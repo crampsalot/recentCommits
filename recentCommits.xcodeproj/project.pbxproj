@@ -106,15 +106,14 @@
 		4A0FC7D925DE3D8B008D746B /* recentCommits */ = {
 			isa = PBXGroup;
 			children = (
-				4A19757825E0C28B006F0007 /* ViewControllers */,
-				4A19755E25DE448C006F0007 /* json */,
-				4A0FC7DA25DE3D8B008D746B /* AppDelegate.swift */,
-				4A0FC7DC25DE3D8B008D746B /* SceneDelegate.swift */,
-				4A0FC7E025DE3D8B008D746B /* Main.storyboard */,
 				4A0FC7E325DE3D8F008D746B /* Assets.xcassets */,
-				4A0FC7E525DE3D8F008D746B /* LaunchScreen.storyboard */,
 				4A0FC7E825DE3D8F008D746B /* Info.plist */,
+				4A0FC7DA25DE3D8B008D746B /* AppDelegate.swift */,
 				4A19756A25DE5162006F0007 /* GitHubAPIService.swift */,
+				4A19755E25DE448C006F0007 /* JSON */,
+				4A0FC7DC25DE3D8B008D746B /* SceneDelegate.swift */,
+				4A19758725E0E751006F0007 /* Storyboards */,
+				4A19757825E0C28B006F0007 /* ViewControllers */,
 			);
 			path = recentCommits;
 			sourceTree = "<group>";
@@ -137,12 +136,12 @@
 			path = recentCommitsUITests;
 			sourceTree = "<group>";
 		};
-		4A19755E25DE448C006F0007 /* json */ = {
+		4A19755E25DE448C006F0007 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
 				4A19755F25DE44E3006F0007 /* sample.json */,
 			);
-			path = json;
+			path = JSON;
 			sourceTree = "<group>";
 		};
 		4A19757825E0C28B006F0007 /* ViewControllers */ = {
@@ -151,6 +150,15 @@
 				4A19757925E0C2BF006F0007 /* RecentCommitsTableViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4A19758725E0E751006F0007 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4A0FC7E525DE3D8F008D746B /* LaunchScreen.storyboard */,
+				4A0FC7E025DE3D8B008D746B /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
