@@ -14,6 +14,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        GitHubAPIService.sharedInstance.getCommits(forOwner: "crampsalot", forRepo: "recentCommits") { result in
+            switch (result) {
+            case .success(let commits):
+                print("\(commits.count) commits received.")
+
+                commits.forEach { (onecommit) in
+                    print(onecommit.sha ?? "")
+                    print(onecommit.commit?.author?.name ?? "")
+                    print(onecommit.commit?.message ?? "")
+                    print()
+                }
+            case .failure(_):
+                print("Failed to get commits")
+            }
+        }
         return true
     }
 
