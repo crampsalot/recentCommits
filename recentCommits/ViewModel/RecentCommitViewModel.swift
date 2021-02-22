@@ -13,8 +13,8 @@ struct RecentCommitViewModel {
     let message: String
 
     init(commit: Commit) {
-        author = commit.commitDetails?.author.name ?? ""
-        commitHash = commit.sha ?? ""
-        message = commit.commitDetails?.message ?? ""
+        self.author = commit.commitDetails?.author?.name ?? ""
+        self.commitHash = commit.sha ?? ""
+        self.message = commit.commitDetails?.message ?? ""
     }
 }
