@@ -17,3 +17,6 @@ Please include any unit tests you performed on this app.
 
 ## Assumptions
  - The commits returned are for a specific repo for a specific owner. The repo used here is this one. The owner used is me.
+
+## Simulator screenshot
+![Screenshot](recentCommits/images/RecentCommitsScreenshot.png)
