@@ -20,6 +20,7 @@
 		4A19757A25E0C2BF006F0007 /* RecentCommitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A19757925E0C2BF006F0007 /* RecentCommitsTableViewController.swift */; };
 		4AEDD8BB25E37E54004332F3 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEDD8BA25E37E54004332F3 /* Commit.swift */; };
 		4AEDD8C125E38159004332F3 /* RecentCommitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEDD8C025E38159004332F3 /* RecentCommitTableViewCell.swift */; };
+		4AEDD8CD25E38D42004332F3 /* RecentCommitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEDD8CC25E38D42004332F3 /* RecentCommitViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		4A19757925E0C2BF006F0007 /* RecentCommitsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCommitsTableViewController.swift; sourceTree = "<group>"; };
 		4AEDD8BA25E37E54004332F3 /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
 		4AEDD8C025E38159004332F3 /* RecentCommitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCommitTableViewCell.swift; sourceTree = "<group>"; };
+		4AEDD8CC25E38D42004332F3 /* RecentCommitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCommitViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,16 +112,17 @@
 		4A0FC7D925DE3D8B008D746B /* recentCommits */ = {
 			isa = PBXGroup;
 			children = (
-				4AEDD8BF25E380F2004332F3 /* View */,
 				4AEDD8B925E37DDB004332F3 /* Model */,
-				4A0FC7E325DE3D8F008D746B /* Assets.xcassets */,
-				4A0FC7E825DE3D8F008D746B /* Info.plist */,
-				4A0FC7DA25DE3D8B008D746B /* AppDelegate.swift */,
-				4A19756A25DE5162006F0007 /* GitHubAPIService.swift */,
-				4A19755E25DE448C006F0007 /* JSON */,
-				4A0FC7DC25DE3D8B008D746B /* SceneDelegate.swift */,
-				4A19758725E0E751006F0007 /* Storyboards */,
+				4AEDD8CB25E38CAE004332F3 /* ViewModel */,
+				4AEDD8BF25E380F2004332F3 /* View */,
 				4A19757825E0C28B006F0007 /* ViewControllers */,
+				4A19758725E0E751006F0007 /* Storyboards */,
+				4A19756A25DE5162006F0007 /* GitHubAPIService.swift */,
+				4A0FC7DA25DE3D8B008D746B /* AppDelegate.swift */,
+				4A0FC7DC25DE3D8B008D746B /* SceneDelegate.swift */,
+				4A0FC7E825DE3D8F008D746B /* Info.plist */,
+				4A0FC7E325DE3D8F008D746B /* Assets.xcassets */,
+				4A19755E25DE448C006F0007 /* JSON */,
 			);
 			path = recentCommits;
 			sourceTree = "<group>";
@@ -181,6 +184,14 @@
 				4AEDD8C025E38159004332F3 /* RecentCommitTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		4AEDD8CB25E38CAE004332F3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4AEDD8CC25E38D42004332F3 /* RecentCommitViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AEDD8BB25E37E54004332F3 /* Commit.swift in Sources */,
+				4AEDD8CD25E38D42004332F3 /* RecentCommitViewModel.swift in Sources */,
 				4A19757A25E0C2BF006F0007 /* RecentCommitsTableViewController.swift in Sources */,
 				4A0FC7DB25DE3D8B008D746B /* AppDelegate.swift in Sources */,
 				4AEDD8C125E38159004332F3 /* RecentCommitTableViewCell.swift in Sources */,

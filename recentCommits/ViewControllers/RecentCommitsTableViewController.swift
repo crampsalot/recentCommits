@@ -8,21 +8,11 @@
 import UIKit
 
 class RecentCommitsTableViewController: UITableViewController {
-    private var commits: [Commit] = []
-    private let cellId = "cellId"
+    private var commitViewModels: [RecentCommitViewModel] = []
 
     // MARK: - Life cycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-
-//        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
         self.title = "Recent Commits"
         fetchCommits()
     }
@@ -32,7 +22,7 @@ class RecentCommitsTableViewController: UITableViewController {
         GitHubAPIService.sharedInstance.getCommits(forOwner: "crampsalot", forRepo: "recentCommits") { result in
             switch (result) {
             case .success(let commits):
-                self.commits = commits
+                self.commitViewModels = commits.map({ return RecentCommitViewModel(commit: $0)})
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
@@ -40,9 +30,7 @@ class RecentCommitsTableViewController: UITableViewController {
                 print("Failed to get commits")
             }
         }
-
     }
-
 
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -50,7 +38,7 @@ class RecentCommitsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return commits.count
+        return commitViewModels.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -58,8 +46,8 @@ class RecentCommitsTableViewController: UITableViewController {
             return UITableViewCell()
         }
 
-        let commit = commits[indexPath.row]
-        cell.configure(model: commit)
+        let commitViewModel = commitViewModels[indexPath.row]
+        cell.configure(viewModel: commitViewModel)
 
         return cell
     }

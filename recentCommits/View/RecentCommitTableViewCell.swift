@@ -14,10 +14,10 @@ class RecentCommitTableViewCell: UITableViewCell {
     @IBOutlet weak var commitHashLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
 
-    func configure(model: Commit) {
-        self.authorLabel.text = model.commitDetails?.author.name
-        self.commitHashLabel.text = model.sha
-        self.messageLabel.text = model.commitDetails?.message
+    func configure(viewModel: RecentCommitViewModel) {
+        self.authorLabel.text = viewModel.author
+        self.commitHashLabel.text = viewModel.commitHash
+        self.messageLabel.text = viewModel.message
     }
 
 }
