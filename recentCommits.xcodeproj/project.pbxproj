@@ -19,7 +19,7 @@
 		4A19757A25E0C2BF006F0007 /* RecentCommitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A19757925E0C2BF006F0007 /* RecentCommitsTableViewController.swift */; };
 		4A9D341125E435410057D259 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A9D341025E435400057D259 /* sample.json */; };
 		4A9D341625E435640057D259 /* oneCommit.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A9D341525E435640057D259 /* oneCommit.json */; };
-		4A9D341E25E43C830057D259 /* multipleA.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A9D341D25E43C830057D259 /* multipleA.json */; };
+		4A9D341E25E43C830057D259 /* multipleCommits.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A9D341D25E43C830057D259 /* multipleCommits.json */; };
 		4A9D342325E440280057D259 /* badNames.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A9D342225E440280057D259 /* badNames.json */; };
 		4A9D342B25E449CA0057D259 /* zeroCommit.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A9D342A25E449CA0057D259 /* zeroCommit.json */; };
 		4AEDD8BB25E37E54004332F3 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEDD8BA25E37E54004332F3 /* Commit.swift */; };
@@ -63,7 +63,7 @@
 		4A19757925E0C2BF006F0007 /* RecentCommitsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCommitsTableViewController.swift; sourceTree = "<group>"; };
 		4A9D341025E435400057D259 /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
 		4A9D341525E435640057D259 /* oneCommit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = oneCommit.json; sourceTree = "<group>"; };
-		4A9D341D25E43C830057D259 /* multipleA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = multipleA.json; sourceTree = "<group>"; };
+		4A9D341D25E43C830057D259 /* multipleCommits.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = multipleCommits.json; sourceTree = "<group>"; };
 		4A9D342225E440280057D259 /* badNames.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = badNames.json; sourceTree = "<group>"; };
 		4A9D342A25E449CA0057D259 /* zeroCommit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = zeroCommit.json; sourceTree = "<group>"; };
 		4AEDD8BA25E37E54004332F3 /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 			children = (
 				4A9D342A25E449CA0057D259 /* zeroCommit.json */,
 				4A9D342225E440280057D259 /* badNames.json */,
-				4A9D341D25E43C830057D259 /* multipleA.json */,
+				4A9D341D25E43C830057D259 /* multipleCommits.json */,
 				4A9D341525E435640057D259 /* oneCommit.json */,
 				4A9D341025E435400057D259 /* sample.json */,
 			);
@@ -312,7 +312,7 @@
 				4A9D342325E440280057D259 /* badNames.json in Resources */,
 				4A9D341125E435410057D259 /* sample.json in Resources */,
 				4A9D342B25E449CA0057D259 /* zeroCommit.json in Resources */,
-				4A9D341E25E43C830057D259 /* multipleA.json in Resources */,
+				4A9D341E25E43C830057D259 /* multipleCommits.json in Resources */,
 				4A0FC7E725DE3D8F008D746B /* LaunchScreen.storyboard in Resources */,
 				4A19757425E0C14B006F0007 /* README.md in Resources */,
 				4A0FC7E425DE3D8F008D746B /* Assets.xcassets in Resources */,
