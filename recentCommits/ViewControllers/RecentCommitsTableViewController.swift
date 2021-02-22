@@ -54,23 +54,12 @@ class RecentCommitsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: RecentCommitTableViewCell.cellId, for: indexPath) as? RecentCommitTableViewCell else {
+            return UITableViewCell()
+        }
 
         let commit = commits[indexPath.row]
-
-        if let tmpLabel = cell.viewWithTag(1) as? UILabel {
-            tmpLabel.text = commit.commitDetails?.author.name
-        }
-
-        if let tmpLabel = cell.viewWithTag(2) as? UILabel {
-            tmpLabel.text = commit.sha
-        }
-
-        if let tmpLabel = cell.viewWithTag(3) as? UILabel {
-            tmpLabel.text = commit.commitDetails?.message
-//            tmpLabel.text = "Really long line sdfd fdf dfdf sd fdf sdf fs df sdf sdf df sdf sdf sdf sdf sdf sd fsd fsdf sdf sdf sdfsd fsdf sf d"
-
-        }
+        cell.configure(model: commit)
 
         return cell
     }
