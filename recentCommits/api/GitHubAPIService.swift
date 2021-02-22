@@ -22,8 +22,13 @@ import Foundation
 //   }
 //
 struct Commit: Decodable {
+    private enum CodingKeys: String, CodingKey {
+        case sha
+        case commitDetails = "commit"
+    }
+
     let sha: String?
-    let commit: CommitDetails?
+    let commitDetails: CommitDetails?
 }
 
 struct CommitDetails: Decodable {

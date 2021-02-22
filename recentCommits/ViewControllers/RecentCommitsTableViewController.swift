@@ -59,7 +59,7 @@ class RecentCommitsTableViewController: UITableViewController {
         let commit = commits[indexPath.row]
 
         if let tmpLabel = cell.viewWithTag(1) as? UILabel {
-            tmpLabel.text = commit.commit?.author.name
+            tmpLabel.text = commit.commitDetails?.author.name
         }
 
         if let tmpLabel = cell.viewWithTag(2) as? UILabel {
@@ -67,7 +67,7 @@ class RecentCommitsTableViewController: UITableViewController {
         }
 
         if let tmpLabel = cell.viewWithTag(3) as? UILabel {
-            tmpLabel.text = commit.commit?.message
+            tmpLabel.text = commit.commitDetails?.message
 //            tmpLabel.text = "Really long line sdfd fdf dfdf sd fdf sdf fs df sdf sdf df sdf sdf sdf sdf sdf sd fsd fsdf sdf sdf sdfsd fsdf sf d"
 
         }
