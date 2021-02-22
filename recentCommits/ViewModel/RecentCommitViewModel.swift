@@ -13,6 +13,7 @@ struct RecentCommitViewModel {
     let message: String
 
     init(commit: Commit) {
+        // Currently defaulting to empty strings.
         self.author = commit.commitDetails?.author?.name ?? ""
         self.commitHash = commit.sha ?? ""
         self.message = commit.commitDetails?.message ?? ""

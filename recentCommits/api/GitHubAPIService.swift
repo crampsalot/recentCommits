@@ -69,7 +69,7 @@ class GitHubAPIService {
         }.resume()
     }
 
-    private func getCommitsFromJSON(jsonData: Data) throws -> [Commit]? {
+    func getCommitsFromJSON(jsonData: Data) throws -> [Commit]? {
         let commits = try JSONDecoder().decode([Commit].self, from: jsonData)
         return commits
     }

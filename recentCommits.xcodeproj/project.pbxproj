@@ -14,10 +14,14 @@
 		4A0FC7E725DE3D8F008D746B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A0FC7E525DE3D8F008D746B /* LaunchScreen.storyboard */; };
 		4A0FC7F225DE3D8F008D746B /* recentCommitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0FC7F125DE3D8F008D746B /* recentCommitsTests.swift */; };
 		4A0FC7FD25DE3D8F008D746B /* recentCommitsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0FC7FC25DE3D8F008D746B /* recentCommitsUITests.swift */; };
-		4A19756025DE44E3006F0007 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A19755F25DE44E3006F0007 /* sample.json */; };
 		4A19756B25DE5162006F0007 /* GitHubAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A19756A25DE5162006F0007 /* GitHubAPIService.swift */; };
 		4A19757425E0C14B006F0007 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4A19757325E0C14A006F0007 /* README.md */; };
 		4A19757A25E0C2BF006F0007 /* RecentCommitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A19757925E0C2BF006F0007 /* RecentCommitsTableViewController.swift */; };
+		4A9D341125E435410057D259 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A9D341025E435400057D259 /* sample.json */; };
+		4A9D341625E435640057D259 /* oneCommit.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A9D341525E435640057D259 /* oneCommit.json */; };
+		4A9D341E25E43C830057D259 /* multipleA.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A9D341D25E43C830057D259 /* multipleA.json */; };
+		4A9D342325E440280057D259 /* badNames.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A9D342225E440280057D259 /* badNames.json */; };
+		4A9D342B25E449CA0057D259 /* zeroCommit.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A9D342A25E449CA0057D259 /* zeroCommit.json */; };
 		4AEDD8BB25E37E54004332F3 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEDD8BA25E37E54004332F3 /* Commit.swift */; };
 		4AEDD8C125E38159004332F3 /* RecentCommitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEDD8C025E38159004332F3 /* RecentCommitTableViewCell.swift */; };
 		4AEDD8CD25E38D42004332F3 /* RecentCommitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEDD8CC25E38D42004332F3 /* RecentCommitViewModel.swift */; };
@@ -54,10 +58,14 @@
 		4A0FC7F825DE3D8F008D746B /* recentCommitsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = recentCommitsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0FC7FC25DE3D8F008D746B /* recentCommitsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recentCommitsUITests.swift; sourceTree = "<group>"; };
 		4A0FC7FE25DE3D8F008D746B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A19755F25DE44E3006F0007 /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = SOURCE_ROOT; };
 		4A19756A25DE5162006F0007 /* GitHubAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GitHubAPIService.swift; path = api/GitHubAPIService.swift; sourceTree = "<group>"; };
 		4A19757325E0C14A006F0007 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4A19757925E0C2BF006F0007 /* RecentCommitsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCommitsTableViewController.swift; sourceTree = "<group>"; };
+		4A9D341025E435400057D259 /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
+		4A9D341525E435640057D259 /* oneCommit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = oneCommit.json; sourceTree = "<group>"; };
+		4A9D341D25E43C830057D259 /* multipleA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = multipleA.json; sourceTree = "<group>"; };
+		4A9D342225E440280057D259 /* badNames.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = badNames.json; sourceTree = "<group>"; };
+		4A9D342A25E449CA0057D259 /* zeroCommit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = zeroCommit.json; sourceTree = "<group>"; };
 		4AEDD8BA25E37E54004332F3 /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
 		4AEDD8C025E38159004332F3 /* RecentCommitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCommitTableViewCell.swift; sourceTree = "<group>"; };
 		4AEDD8CC25E38D42004332F3 /* RecentCommitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCommitViewModel.swift; sourceTree = "<group>"; };
@@ -148,7 +156,11 @@
 		4A19755E25DE448C006F0007 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				4A19755F25DE44E3006F0007 /* sample.json */,
+				4A9D342A25E449CA0057D259 /* zeroCommit.json */,
+				4A9D342225E440280057D259 /* badNames.json */,
+				4A9D341D25E43C830057D259 /* multipleA.json */,
+				4A9D341525E435640057D259 /* oneCommit.json */,
+				4A9D341025E435400057D259 /* sample.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -297,11 +309,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A9D342325E440280057D259 /* badNames.json in Resources */,
+				4A9D341125E435410057D259 /* sample.json in Resources */,
+				4A9D342B25E449CA0057D259 /* zeroCommit.json in Resources */,
+				4A9D341E25E43C830057D259 /* multipleA.json in Resources */,
 				4A0FC7E725DE3D8F008D746B /* LaunchScreen.storyboard in Resources */,
-				4A19756025DE44E3006F0007 /* sample.json in Resources */,
 				4A19757425E0C14B006F0007 /* README.md in Resources */,
 				4A0FC7E425DE3D8F008D746B /* Assets.xcassets in Resources */,
 				4A0FC7E225DE3D8B008D746B /* Main.storyboard in Resources */,
+				4A9D341625E435640057D259 /* oneCommit.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

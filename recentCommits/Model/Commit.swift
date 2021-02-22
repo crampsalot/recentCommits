@@ -22,6 +22,11 @@ import Foundation
 //   }
 //
 struct Commit: Decodable {
+    // Within the commit JSON object, there is a 'commit'
+    // property which is an object containing more detail.
+    // The model object will capture this as 'commitDetails' to
+    // avoid any confusion and the CodingKeys enum keys is added
+    // to ensure parsing still works.
     private enum CodingKeys: String, CodingKey {
         case sha
         case commitDetails = "commit"
