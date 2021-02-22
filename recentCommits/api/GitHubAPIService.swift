@@ -17,16 +17,16 @@ enum GitHubAPIErrors: Error {
 
 class GitHubAPIService {
     // API for list of commits:
-    // https://api.github.com/repos/{owner}/{repo}/commits
+    // https://api.github.com/repos/{owner}/{repo}/commits?per_page=25
 
     private let BASE_URL = "https://api.github.com"
-
+    static let RecentCommitsPageSize = 25
     static let sharedInstance = GitHubAPIService()
 
     private init() {
     }
 
-    func getCommits(forOwner owner: String, forRepo repo: String,
+    func getCommits(forOwner owner: String, forRepo repo: String, pageSize: Int = RecentCommitsPageSize,
                     completion: ((Result<[Commit], GitHubAPIErrors>) -> Void)?) {
 
         guard let baseURL = URL(string: BASE_URL) else {
@@ -34,11 +34,28 @@ class GitHubAPIService {
             return
         }
 
+        // Use URL class to construct url without query params
+        // Then use URLComponents to add query params
+
         let url = baseURL.appendingPathComponent("repos").appendingPathComponent(owner).appendingPathComponent(repo).appendingPathComponent("commits")
 
-        print("URL: ", url)
+        guard var urlComponents = URLComponents(string: url.absoluteString) else {
+            completion?(.failure(GitHubAPIErrors.urlCreationFailed))
+            return
+        }
 
-        URLSession.shared.dataTask(with: url) { data, response, error in
+        urlComponents.queryItems = [
+            URLQueryItem(name: "per_page", value: String(pageSize)),
+            ]
+
+        guard let urlWithParams = urlComponents.url else {
+            completion?(.failure(GitHubAPIErrors.urlCreationFailed))
+            return
+        }
+
+        print("URL: ", urlWithParams)
+
+        URLSession.shared.dataTask(with: urlWithParams) { data, response, error in
             guard let httpurlResponse = response as? HTTPURLResponse else {
                 completion?(.failure(.badHttpResponse))
                 return
@@ -73,5 +90,4 @@ class GitHubAPIService {
         let commits = try JSONDecoder().decode([Commit].self, from: jsonData)
         return commits
     }
-
 }
