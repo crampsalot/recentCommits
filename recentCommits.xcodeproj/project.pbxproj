@@ -18,6 +18,7 @@
 		4A19756B25DE5162006F0007 /* GitHubAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A19756A25DE5162006F0007 /* GitHubAPIService.swift */; };
 		4A19757425E0C14B006F0007 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4A19757325E0C14A006F0007 /* README.md */; };
 		4A19757A25E0C2BF006F0007 /* RecentCommitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A19757925E0C2BF006F0007 /* RecentCommitsTableViewController.swift */; };
+		4AEDD8BB25E37E54004332F3 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEDD8BA25E37E54004332F3 /* Commit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		4A19756A25DE5162006F0007 /* GitHubAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GitHubAPIService.swift; path = api/GitHubAPIService.swift; sourceTree = "<group>"; };
 		4A19757325E0C14A006F0007 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4A19757925E0C2BF006F0007 /* RecentCommitsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCommitsTableViewController.swift; sourceTree = "<group>"; };
+		4AEDD8BA25E37E54004332F3 /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		4A0FC7D925DE3D8B008D746B /* recentCommits */ = {
 			isa = PBXGroup;
 			children = (
+				4AEDD8B925E37DDB004332F3 /* Model */,
 				4A0FC7E325DE3D8F008D746B /* Assets.xcassets */,
 				4A0FC7E825DE3D8F008D746B /* Info.plist */,
 				4A0FC7DA25DE3D8B008D746B /* AppDelegate.swift */,
@@ -159,6 +162,14 @@
 				4A0FC7E025DE3D8B008D746B /* Main.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4AEDD8B925E37DDB004332F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4AEDD8BA25E37E54004332F3 /* Commit.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AEDD8BB25E37E54004332F3 /* Commit.swift in Sources */,
 				4A19757A25E0C2BF006F0007 /* RecentCommitsTableViewController.swift in Sources */,
 				4A0FC7DB25DE3D8B008D746B /* AppDelegate.swift in Sources */,
 				4A0FC7DD25DE3D8B008D746B /* SceneDelegate.swift in Sources */,
