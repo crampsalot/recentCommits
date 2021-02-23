@@ -27,7 +27,14 @@ class RecentCommitsTableViewController: UITableViewController {
                     self.tableView.reloadData()
                 }
             case .failure(let error):
-                print("Failed to get commits: " + error.getErrorString())
+                let msg = "Failed to get commits: " + error.getErrorString()
+
+                let alert = UIAlertController(title: "Error", message: msg, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+
+                DispatchQueue.main.async {
+                    self.present(alert, animated: true)
+                }
             }
         }
     }
