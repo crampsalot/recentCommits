@@ -18,6 +18,7 @@ Please include any unit tests you performed on this app.
 ## Assumptions
  - The commits returned are for a specific repo for a specific owner. The repo used here is this one. The owner used is me.
  - No authentication is required. Unauthenticated requests are allowed 60 requests per hour. See [GitHub API Authentication](https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api#authentication)
+ - Only the most recent 25 commits are fetched. If there are 27 total commits, the first 2 commits in the history will not be fetched/displayed.
 
 ## Simulator screenshot
 ![Screenshot](recentCommits/images/RecentCommitsScreenshot.png)
