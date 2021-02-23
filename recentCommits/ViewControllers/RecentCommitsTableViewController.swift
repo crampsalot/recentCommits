@@ -26,8 +26,8 @@ class RecentCommitsTableViewController: UITableViewController {
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
-            case .failure(_):
-                print("Failed to get commits")
+            case .failure(let error):
+                print("Failed to get commits: " + error.getErrorString())
             }
         }
     }

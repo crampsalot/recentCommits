@@ -9,10 +9,25 @@ import Foundation
 
 enum GitHubAPIErrors: Error {
     case urlCreationFailed
-    case badHttpResponse
+    case badHttpResponse(String)
     case noDataReturned
-    case badHttpStatus
+    case badHttpStatus(Int)
     case jsonParsingFailed(String)
+
+    func getErrorString() -> String {
+        switch self {
+        case .urlCreationFailed:
+            return "URL Creation failed"
+        case .badHttpResponse(let errorString):
+            return errorString
+        case .noDataReturned:
+            return "No data returned"
+        case .badHttpStatus(let statusCode):
+            return "Bad HTTP Status Code: \(statusCode)"
+        case .jsonParsingFailed(let errorString):
+            return "JSON Parsing failed: \(errorString)"
+        }
+    }
 }
 
 class GitHubAPIService {
@@ -56,13 +71,17 @@ class GitHubAPIService {
         print("URL: ", urlWithParams)
 
         URLSession.shared.dataTask(with: urlWithParams) { data, response, error in
+            if let error = error {
+                completion?(.failure(.badHttpResponse(error.localizedDescription)))
+                return
+            }
             guard let httpurlResponse = response as? HTTPURLResponse else {
-                completion?(.failure(.badHttpResponse))
+                completion?(.failure(.badHttpResponse("Bad HTTP response")))
                 return
             }
 
             guard httpurlResponse.statusCode == 200 else {
-                completion?(.failure(.badHttpStatus))
+                completion?(.failure(.badHttpStatus(httpurlResponse.statusCode)))
                 return
             }
 
