@@ -30,7 +30,7 @@ class recentCommitsTests: XCTestCase {
         XCTAssertEqual(commits[0].commitDetails?.message, "Initial commit")
     }
 
-    // Tests there is 14 commits in JSON and checks the properties of 7th commit
+    // Tests there are 14 commits in JSON and checks the properties of 7th commit
     func testMultipleCommits() throws {
         guard let commits = getCommitsFromJSONFile(fileName: "multipleCommits") else {
             return
